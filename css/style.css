@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.classContainer {
+ text-align: center;
+ margin-top: 100px;
+}
+
+.classContainer #firstName {
+   padding: 5px;
+   border-radius: 5px;
+}
+
+.classContainer .classButton {
+    padding: 5px;    
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.gameGrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:0;
+}
+
+.frame{
+    width:5rem;
+    height: 5rem;
+    border: 1.5px solid #FFFFFF;
+    text-align: center;
+    color:rgb(7, 255, 69);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A5A5B6;
+    transition: background-color ease-in 0.2s;
+}
+
+.frame:hover{
+    background-color:#cccc;
+}
+
+.ContainerGame{
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    text-align: center;
+}
+
+
+/* Modal ::: Modal ::: Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #888;
+    width: 40%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
